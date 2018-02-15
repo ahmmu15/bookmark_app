@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookmark App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body onload="fetchBookmarks()">
+
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Bookmark Your Favorite Sites</h2>
+      <form action="" id="myForm">
+        <div class="form-group">
+          <label for="siteName">Site Name</label>
+          <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+        </div>
+        <div class="form-group">
+          <label for="siteURL">Site URL</label>
+          <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <button class="btn btn-success show-hide-link-btn" onclick="showAndHide()">Show Links</button>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <button class="btn btn-info show-hide-link-btn" onclick="copyData()">Copy Data</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div id="bookmarkResults"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2017 Bookmark App, Inc.</p>
+    </footer>
+  </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/main.js">
+
+</script>
+</body>
+</html>

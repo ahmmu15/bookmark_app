@@ -1,0 +1,14 @@
+.well {
+  overflow: hidden;
+}
+
+.btn {
+  float: right;
+  margin-right: 5px
+}
+
+.show-hide-link-btn {
+  float: none;
+  margin: auto;
+  margin-bottom: 30px;
+}
